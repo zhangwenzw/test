@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>字幕滚动</title>
+  <style>
+    #container {
+      width: 500px;
+      height: 30px;
+      overflow: hidden;
+      margin: 100px auto;
+    }
+    #list li {
+      height: 30px;
+      line-height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container" >
+    <ul id="list">
+      <li>前端现在能做到的有很多</li>
+      <li>比如游戏开发</li>
+      <li>比如web开发 </li>
+      <li>比如webApp开发</li>
+      <li>比如图形开发</li>
+      <li>比如桌面应用嵌入式开发等等</li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    // 计时器时间
+    var speed=40;
+    function Marquee(){
+      var c = document.getElementById("container");
+      var l = document.getElementById("list");
+      c.scrollTop++;
+      // 设置无限滚动
+      if (c.scrollTop == l.offsetHeight)
+      {
+        c.scrollTop = 0;
+      }
+    };
+    // 初始化
+    var MyMar=setInterval(Marquee,speed);
+  </script>
+</body>
+</html>

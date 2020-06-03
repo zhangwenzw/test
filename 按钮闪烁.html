@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>按钮闪烁</title>
+  <style>
+    .button {
+      width: 100px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;;
+      border-radius: 3px;
+      border: none;
+      animation: change 5s infinite;
+      color: #333;
+      color: #4b565e;
+      margin: 100px auto;
+    }
+    @keyframes change {
+      0% {
+        background: #f2a23a;
+      }
+      25% {
+        background: #88c269;
+      }
+      75% {
+        background: #a2d1E4;
+      }
+      100% {
+        background: #f2a23a;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="button">按钮</div>
+</body>
+</html>
