@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>字幕滚动</title>
   <style>
+    body {
+      background: #dfff;
+    }
     #container {
       width: 500px;
       height: 30px;
@@ -11,8 +14,9 @@
       margin: 100px auto;
     }
     #list li {
-      height: 30px;
-      line-height: 30px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 26px;
     }
   </style>
 </head>
@@ -29,7 +33,7 @@
   </div>
   <script type="text/javascript">
     // 计时器时间
-    var speed=40;
+    var speed = 30;
     function Marquee(){
       var c = document.getElementById("container");
       var l = document.getElementById("list");
